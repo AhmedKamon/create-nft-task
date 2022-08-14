@@ -1,10 +1,12 @@
 import Progress from "../constent/Progress";
+import Table from "../constent/Table";
 import { details } from "../utils/static";
 
 function Body() {
   return (
     <div className="lg:px-28 px-11 ">
       <Progress />
+      {/*  */}
       <div className="flex  flex-col md:flex-row md:justify-between items-center cursor-pointer my-5  ">
         {details.map((item) => (
           <div
@@ -20,6 +22,10 @@ function Body() {
             <h1 className="text-white font-medium">{item.name}</h1>
           </div>
         ))}
+      </div>
+      {/*  */}
+      <div className="bg-[#58DBBA]/10 rounded-lg">
+        <Table/>
       </div>
     </div>
   );
