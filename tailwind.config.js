@@ -2,6 +2,7 @@ module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
+  
   theme: {
     extend: {
       fontFamily: {
@@ -10,4 +11,7 @@ module.exports = {
     },
   },
   plugins: [],
+  variants: {
+     appearance: ['responsive', 'hover', 'focus'],
+  }
 }
