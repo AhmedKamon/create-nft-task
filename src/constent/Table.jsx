@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Certification from "./Certification";
 import CertificationStatus from "./CertificationStatus";
 
 function Table() {
@@ -25,6 +26,7 @@ function Table() {
     <div className="p-16 ">
       <form action="" onSubmit={handelSubmit} >
         <CertificationStatus handelChange={handelChange} formData={formData} />
+        <Certification/>
         <input type="submit" name="" value='Create Project NFT' id="" className="bg-gray-500 px-4 py-2 " />
       </form>
     </div>

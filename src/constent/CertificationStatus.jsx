@@ -50,7 +50,7 @@ function CertificationStatus({handelChange,formData}) {
           </div>
         </div>
       </div>
-      <div className="border-b-[1px] border-[#D9D9D9] mt-3"></div>
+      <div className="border-b-[1px] border-[#D9D9D9] mt-2 mb-7"></div>
     </div>
   );
 }
