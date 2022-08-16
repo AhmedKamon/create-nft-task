@@ -2,11 +2,13 @@ import React, { useState } from "react";
 import Certification from "./Certification";
 import CertificationStatus from "./CertificationStatus";
 import Date from "./Date";
+import Token from "./Token";
 
 function Table() {
   const [formData, setFormData] = useState({
     certification_status: "pending",
     certification: "",
+    date: "",
   });
   const handelChange = (e) => {
     console.log(e);
@@ -27,8 +29,9 @@ function Table() {
     <div className="p-16 ">
       <form action="" onSubmit={handelSubmit}>
         <CertificationStatus handelChange={handelChange} formData={formData} />
-        <Certification handelChange={handelChange}  />
-        <Date/>
+        <Certification handelChange={handelChange} />
+        <Date formData={formData} />
+        <Token handelChange={handelChange} />
         <input
           type="submit"
           name=""
