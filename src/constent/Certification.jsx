@@ -1,15 +1,11 @@
-import React, { useState } from "react";
-
-function Certification() {
-  const [data, setData] = useState(false);
-  console.log(data, "isOpen");
+function Certification({ handelChange }) {
   return (
     <div>
       <div className="grid grid-cols-2 gap-4 ">
         <h1 className="text-[#0A8A97] font-medium ">Certification</h1>
         <div>
           <select
-            onClick={(e) => setData(e.target.value)}
+            onChange={handelChange}
             placeholder="Select Certification"
             name="certification"
             id="certification"
