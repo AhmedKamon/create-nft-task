@@ -8,12 +8,14 @@ function Token({ handelChange }) {
         <div>
           <select
             onChange={handelChange}
-            placeholder="Select a Token Issuer"
             name="token"
             id="token"
             className="  w-full text-[#757575] font-normal font-[14px] py-3 px-2 focus:outline-none focus:outline-[#58DBBA] rounded-sm "
           >
-            <option className=" py-3 px-2" value="GreenTrade Impact GmbH">
+            <option selected disabled className=" py-3 px-2" value="">
+            Select a Token Issuer
+            </option>
+            <option className=" font-medium text-black after:hover:bg-[#58DBBA] hover:text-white" value="GreenTrade Impact GmbH">
               GreenTrade Impact GmbH
             </option>
           </select>

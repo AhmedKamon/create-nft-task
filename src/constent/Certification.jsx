@@ -6,18 +6,20 @@ function Certification({ handelChange }) {
         <div>
           <select
             onChange={handelChange}
-            placeholder="Select Certification"
             name="certification"
             id="certification"
             className="  w-full text-[#757575] font-normal font-[14px] py-3 px-2 focus:outline-none focus:outline-[#58DBBA] rounded-sm "
           >
+            <option selected disabled className=" py-3 px-2" value=" Select Certification">
+            Select Certification
+            </option>
             <option
               className="font-medium text-black after:hover:bg-[#58DBBA] hover:text-white "
               value="Certified Emission Reduction (CER)"
             >
               Certified Emission Reduction (CER)
             </option>
-            <option className=" py-3 px-2" value="Verified Carbon Units (VCU) ">
+            <option className=" font-medium text-black after:hover:bg-[#58DBBA] hover:text-white" value="Verified Carbon Units (VCU) ">
               Verified Carbon Units (VCU){" "}
             </option>
           </select>

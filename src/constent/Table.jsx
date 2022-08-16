@@ -9,6 +9,7 @@ function Table() {
     certification_status: "pending",
     certification: "",
     date: "",
+    token:''
   });
   const handelChange = (e) => {
     console.log(e);

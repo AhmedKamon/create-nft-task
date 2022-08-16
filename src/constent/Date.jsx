@@ -15,6 +15,7 @@ function Date({ formData }) {
           <div className="bg-white w-full flex items-center ">
             <input
               onClick={() => setshow(!show)}
+              placeholder='Select Certificate Issued date'
               className="h-11  bg-white w-full focus:outline-none p-2 rounded-sm focus:outline-[#58DBBA] "
             ></input>
             <img
