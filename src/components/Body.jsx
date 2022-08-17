@@ -24,9 +24,10 @@ function Body() {
         ))}
       </div>
       {/*  */}
-      <div className="bg-[#58DBBA]/10 rounded-lg">
+      
         <Table/>
-      </div>
+        
+      
     </div>
   );
 }
