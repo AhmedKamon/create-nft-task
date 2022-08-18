@@ -3,7 +3,7 @@ import React from "react";
 function Measurement({ handelChange }) {
   return (
     <div>
-      <div className="grid grid-cols-2 gap-4 ">
+      <div className="md:grid  md:grid-cols-2 md:gap-4 flex flex-col space-y-4 ">
         <h1 className="text-[#0A8A97] font-medium ">Measurement</h1>
         <div className="space-y-6">
           <div className="flex flex-col items-start ">
@@ -60,7 +60,7 @@ function Measurement({ handelChange }) {
               onChange={handelChange}
             />
           </div>
-          <div className="flex justify-end">
+          <div className="flex md:justify-end justify-center">
             <button className="text-white font-medium bg-[#0A8A97] px-5 py-3 rounded-md cursor-pointer md:mb-5 ">
               Other Measurement
             </button>

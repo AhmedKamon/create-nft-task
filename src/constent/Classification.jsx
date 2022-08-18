@@ -3,7 +3,7 @@ import React from 'react'
 function Classification({handelChange, formData}) {
   return (
     <div>
-      <div className="grid grid-cols-2 gap-4 ">
+      <div className="md:grid  md:grid-cols-2 md:gap-4 flex flex-col space-y-4 ">
         <h1 className="text-[#0A8A97] font-medium ">Certification Status</h1>
         <div className="flex  justify-between items-end ">
           <div className="flex items-center">

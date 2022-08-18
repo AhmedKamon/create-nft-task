@@ -9,7 +9,7 @@ function Date({ formData }) {
   };
   return (
     <div>
-      <div className="grid grid-cols-2 gap-4 ">
+      <div className="md:grid  md:grid-cols-2 md:gap-4 flex flex-col space-y-4">
         <h1 className="text-[#0A8A97] font-medium ">Certificate Issued date</h1>
         <div>
           <div className="bg-white w-full flex items-center ">

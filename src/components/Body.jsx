@@ -24,10 +24,8 @@ function Body() {
         ))}
       </div>
       {/*  */}
-      
-        <Table/>
-        
-      
+
+      <Table />
     </div>
   );
 }
